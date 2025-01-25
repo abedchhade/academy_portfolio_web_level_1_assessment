@@ -4,6 +4,24 @@
     padding: 0;
     box-sizing: border-box;
   }
+  #imageslider{
+    display: flex;
+    flex: 1;
+   margin: auto;
+   overflow-x:auto;
+    scroll-snap-type:  x mandatory;
+    scroll-behavior: smooth;
+    height: 200px;
+    width: 130px;
+    column-gap: 1px;
+    z-index: 1;
+    
+  }
+  img{
+    z-index: 1;
+    height:  150px;
+    width: 130px;
+  }
   
   body {
     font-family: Arial, sans-serif;
@@ -34,12 +52,22 @@
    width: 49%;
    padding-right: 20px;
   }
+  a:hover{
+    color: orange;
+    text-decoration: underline;
 
+  }
+  a{
+    color:white;
+    text-decoration: none;
+  }
   /* Add your hero section styles here */
   .color{
     color: orange;
     font-size: 15px;
     border: none;
+    padding: 3px;
+    border-radius: 2px;
   }
   .orange{
     text-align: center;
@@ -69,10 +97,29 @@ border-color: none;
 border-style: none;
 
 }
-
+.slide
+{
+  background-color: rgb(223, 222, 222);
+  padding: 10px;
+}
 
   /* Add your contact form styles here */
+  .for{
+    margin: 5px;
+    text-align: left;
+    width: 50%;
+  }
+  .fir{
+    width: 50%;
+    background-color: orange;
+    border: none;
+  }
+
 
   /* Add your footer styles here */
+  .footer{
+    background-color: black;
+    color: white;
+  }
 
   /* Add your responsive design styles here */

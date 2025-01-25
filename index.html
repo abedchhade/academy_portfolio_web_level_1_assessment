@@ -6,12 +6,12 @@
   <title>Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body> 
+<body> <!--onload="loadup()"-->
   <header>
      <!-- Add your header with navigation here -->
 
     <p class="leftp"><strong>Abdul rahman chhade</strong></p>
-    <p id="attheend"><span><a href="#about">About</a></span> <span><a href="#projet">Project</a></span> <span>Contact</span></p>
+    <p id="attheend"><span><a href="#about">About</a></span> <span><a href="#projet">Project</a></span> <span><a href="#contact">Contact</a></span></p>
   </header>
  
 
@@ -36,14 +36,34 @@
       <p class="boder"><span>Project 1</span></br>description of the first project</p>
       <p class="boder"><span>Project 2</span></br>description of the second project</p>
       <p class="boder"><span>Project 3</span></br>description of the third project</p>
-    </article>.
-      
-       <!-- Add your contact form section here -->
+    </article>
+    <div class="slide">
+<p class="slide"><strong>What People Say</strong></p>   
+<div id="imageslider"> 
+  <img src="image1.jpeg">
+  <img src="image2.jpeg">
+  <img src="image3.jpeg">
 
+</div>   
+<!--<img name="slide" src="image1.jpeg" width="100px" height="100px" id="imageslider"/>
+<p name="slide1">"This is the best service i have ever used!"</br>
+Jane Doe</p>-->
+</div>
+
+
+       <!-- Add your contact form section here -->
+       <form id="contact-form">
+        <p>Contact Me</p>
+        <input name="name" id="name" placeholder="your name" class="for"/>
+        <input name="email" id="email" placeholder="your email" class="for"/>
+        <textarea name="message" id="massage" placeholder="your massage" class="for" rows="5"></textarea>
+        <button type="submit" class="fir" >send</button>
+        </form>
   </main>
 
   <!-- Add your footer here -->
-
+   <p class="footer">© 2024 MyProtfolio.All rights reserved </p>
+ 
   <script src="index.js"></script>
 </body>
 </html>
